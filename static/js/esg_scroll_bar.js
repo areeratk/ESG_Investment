@@ -1,5 +1,25 @@
 document.addEventListener('DOMContentLoaded', (event) => {
 
+// Retrieve data from the CSV file and execute everything below
+
+d3.csv("static/data/esgco.csv", function(data) {
+    for (var i = 0; i < data.length; i++) {
+        console.log(data[i].ticker);
+        console.log(data[i].co);
+        console.log(data[i].weight);
+    }
+});
+
+// d3.csv("static/data/esgco.csv", function(d) {
+//     return {
+//       ticker : d.ticker,
+//       co : d.co,
+//       weight : +d.weight      
+//     };
+//   }).then(function(d) {
+//     console.log(data[0]);
+//   });
+        
 var DATA_COUNT = 50;         
 var MAX_LABEL_LENGTH = 30; 
       
@@ -27,10 +47,10 @@ function getRandomArbitrary(min, max) {
   return Math.round(Math.random() * (max - min) + min);
 }  
                     
-var margin =  {top: 20, right: 10, bottom: 20, left: 40};
-var marginOverview = {top: 30, right: 10, bottom: 20, left: 40};
+var margin =  {top: 20, right: 20, bottom: 20, left: 100};
+var marginOverview = {top: 30, right: 20, bottom: 20, left: 100};
 var selectorHeight = 40;
-var width = 600 - margin.left - margin.right;
+var width = 800 - margin.left - margin.right;
 var height = 400 - margin.top - margin.bottom - selectorHeight;
 var heightOverview = 80 - marginOverview.top - marginOverview.bottom;
        

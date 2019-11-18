@@ -13,11 +13,14 @@ document.addEventListener('DOMContentLoaded', (event) => {
         },
     
         title: {
-            text: 'Total fruit consumption, grouped by gender'
+            text: 'S&P 500 Companies Sustainability Report'
+        },
+        subtitle: {
+            text: 'Source: <a href="https://www.ga-institute.com/press-releases/article/flash-report-86-of-sp-500-indexR-companies-publish-sustainability-responsibility-reports-in-20.html">Governance & Accountability Institute</a>'
         },
     
         xAxis: {
-            categories: ['Apples', 'Oranges', 'Pears', 'Grapes', 'Bananas'],
+            categories: ['2011', '2012', '2013', '2014', '2015', '2016', '2017', '2018'],
             labels: {
                 skew3d: true,
                 style: {
@@ -30,7 +33,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
             allowDecimals: false,
             min: 0,
             title: {
-                text: 'Number of fruits',
+                text: '',
                 skew3d: true
             }
         },
@@ -48,21 +51,14 @@ document.addEventListener('DOMContentLoaded', (event) => {
         },
     
         series: [{
-            name: 'John',
-            data: [5, 3, 4, 7, 2],
-            stack: 'male'
+            name: 'Reporters',
+            data: [20, 53, 72, 75, 81, 82, 85, 86],
+            stack: 'whole'
         }, {
-            name: 'Joe',
-            data: [3, 4, 4, 2, 5],
-            stack: 'male'
-        }, {
-            name: 'Jane',
-            data: [2, 5, 6, 2, 1],
-            stack: 'female'
-        }, {
-            name: 'Janet',
-            data: [3, 0, 4, 4, 3],
-            stack: 'female'
+            name: 'Not Reporters',
+            data: [80, 47, 28, 25, 19, 18, 15, 14],
+            stack: 'whole'
+        
         }]
     });
     });

@@ -72,6 +72,15 @@
   </div>
 </nav>
 
+<div class="container-banner">
+    <div class="row">
+      <div class="col-md-12 jumbotron text-center">
+        <h1 class="inline" style="color: blue;">Socially Responsible Investment</h1>
+        <br><br>
+        <p><h3 class="inline" style="color: blue;">E</h3>nvironmental <h3 class="inline" style="color: blue;">S</h3>ocial <h3 class="inline" style="color: blue;">G</h3>overnance </h3>ocial <h3 class="inline" style="color: blue;">Investing</h3></p>
+      </div>
+    </div>
+
 <div class="container-fluid"> <!--SIDE BAR: this is where drop downs will go> -->
   <div class="row content">
     <div class="col-sm-3 sidenav hidden-xs">
@@ -83,27 +92,52 @@
         <li><a href="#section3">STHG2</a></li>
       </ul><br>
     </div>
-    <br>
-    
-    <div class="col-sm-9"> <!--heading: name and explanation-->
+      
+    <div class="col-sm-9"> <!--content-->
+      <div class="row">
+      <div class="col-sm-12"> <!--ESG explained and sunburst chart-->      
       <div class="well">
-        <h2 class="inline">ESG</h2> <h3 class="inline">Investment for Better World</h3>
-        <p>This will be a short explanation. </p>
-
+        <h1 class="inline" style="color: blue;">ESG</h1> <h3 class="inline" style="color: blue;">Investment for Better World</h3>
+        <p>ESG investing involves investments on stocks of firms with high rankings on their sustainable practices which make positive environmental, social, and governance impacts.  The score rubrics for these rankings normally are based on the <a href="https://www.unpri.org/sdgs">UN Sustainable Development Goals</a> which acknowledge that significant private sector action is needed to foster the goals.  The <a href="https://www.ussif.org">US SIF</a> provides some examples of corporate activities causing ESG impacts.</p>
+        
         <div id="sunburst_container"></div>
+       
+        </div>
+       </div>
+      </div>
+      <hr>
 
+      <div class="row">
+          <div class="col-sm-12"> <!--ESG Rankings and 3d-chart-->
+            <div class="well">
+                <h1 class="inline" style="color: blue;">ESG</h1> <h3 class="inline" style="color: blue;">Rankings & Net Benefits to Firms and Investors</h3>
+                <p class="highcharts-description">
+                    Chart showing grouped and stacked 3D columns. These features are
+                    available both for 2D and 3D column charts.
+                </p>
+              
         <figure class="highcharts-figure">
           <div id="3d_chart_container"></div>
-          <p class="highcharts-description">
+        </figure>
 
-              Chart showing grouped and stacked 3D columns. These features are
-              available both for 2D and 3D column charts.
-          </p>
-      </figure>
+            </div>
+          </div> 
+        </div>
+        <hr>
+      
+        <div class="row">
+          <div class="col-sm-12"> <!--ESG index and scroll bar-->      
+            <div class="well">
+              <h1 class="inline" style="color: blue;">ESG</h1> <h3 class="inline" style="color: blue;">Firm Profiles and S&P ESG 500 Index Weight</h3>
+              <p>ESG Firms </p>
+              
+              <div id="scroll_bar_container"></div>
+            
+            </div>
+           </div>
+          </div>
+          <hr>
 
-      <div id="scroll_bar_container"></div>
-
-      </div>
       <div class="row">
         <div class="col-sm-6"> <!--TEXT Info of company-->
           <div class="well">
@@ -149,7 +183,8 @@
   <script src="https://code.highcharts.com/modules/exporting.js"></script>
   <script src="https://code.highcharts.com/modules/export-data.js"></script>
   <script src="https://code.highcharts.com/modules/accessibility.js"></script> -->
-
+</div>
+</div>
 
 </body>
 </html>
