@@ -1,318 +1,317 @@
-ticker,co,weight
-AAPL,Apple Inc,5.93%
-MSFT,Microsoft Corp,5.93%
-AMZN,Amazon.com Inc,3.80%
-JPM,JPMorgan Chase & Co,2.17%
-GOOG,Alphabet Inc,2.04%
-GOOGL,Alphabet Inc,2.03%
-V,Visa Inc,1.64%
-PG,Procter & Gamble Co,1.60%
-XOM,Exxon Mobil Corp,1.54%
-T,AT&T Inc,1.51%
-BAC,Bank of America Corp,1.45%
-DIS,Walt Disney Co,1.41%
-INTC,Intel Corp,1.35%
-HD,Home Depot Inc,1.35%
-MA,Mastercard Inc,1.31%
-VZ,Verizon Communications Inc,1.30%
-UNH,UnitedHealth Group Inc,1.27%
-CVX,Chevron Corp,1.22%
-MRK,Merck & Co Inc,1.15%
-CSCO,Cisco Systems Inc,1.09%
-CMCSA,Comcast Corp,1.08%
-KO,Coca-Cola Co,1.07%
-PFE,Pfizer Inc,1.07%
-PEP,PepsiCo Inc,0.99%
-WMT,Walmart Inc,0.90%
-WMT,Walmart Inc,0.90%
-C,Citigroup Inc,0.88%
-ABT,Abbott Laboratories,0.79%
-MCD,Mcdonald's Corp,0.79%
-MDT,Medtronic PLC,0.77%
-CRM,Salesforce.Com Inc,0.75%
-ADBE,Adobe Inc,0.75%
-AMGN,Amgen Inc,0.69%
-ABBV,Abbvie Inc,0.67%
-NVDA,NVIDIA Corp,0.67%
-UNP,Union Pacific Corp,0.66%
-ACN,Accenture PLC,0.65%
-UTX,United Technologies Corp,0.63%
-NKE,Nike Inc,0.60%
-NEE,Nextera Energy Inc,0.60%
-LIN,Linde PLC,0.59%
-TXN,Texas Instruments Inc,0.58%
-QCOM,Qualcomm Inc,0.58%
-SBUX,Starbucks Corp,0.53%
-GE,General Electric Co,0.52%
-BMY,Bristol-Myers Squibb Co,0.51%
-CVS,CVS Health Corp,0.50%
-DHR,Danaher Corp,0.46%
-LOW,Lowe's Companies Inc,0.46%
-UPS,United Parcel Service Inc,0.45%
-USB,U.S. Bancorp,0.44%
-CAT,Caterpillar Inc,0.43%
-CHTR,Charter Communications Inc,0.43%
-AXP,American Express Co,0.43%
-GILD,Gilead Sciences Inc,0.42%
-CELG,Celgene Corp,0.41%
-MDLZ,Mondelez International Inc,0.40%
-ADP,Automatic Data Processing Inc,0.39%
-CME,CME Group Inc,0.38%
-CI,Cigna Corp,0.38%
-ANTM,Anthem Inc,0.38%
-GS,Goldman Sachs Group Inc,0.38%
-TJX,TJX Companies Inc,0.37%
-PNC,PNC Financial Services Group Inc,0.36%
-CB,Chubb Ltd,0.36%
-INTU,Intuit Inc,0.35%
-BDX,Becton Dickinson and Co,0.35%
-D,Dominion Energy Inc,0.35%
-DUK,Duke Energy Corp,0.34%
-COP,ConocoPhillips,0.34%
-SPGI,S&P Global Inc,0.33%
-MS,Morgan Stanley,0.32%
-AGN,Allergan plc,0.31%
-PLD,Prologis Inc,0.30%
-CL,Colgate-Palmolive Co,0.30%
-CSX,CSX Corp,0.30%
-BSX,Boston Scientific Corp,0.30%
-BLK,BlackRock Inc,0.29%
-DE,Deere & Co,0.29%
-TGT,Target Corp,0.29%
-PSX,Phillips 66,0.28%
-VRTX,Vertex Pharmaceuticals Inc,0.28%
-MMC,Marsh & McLennan Companies Inc,0.28%
-CCI,Crown Castle International Corp,0.28%
-ICE,Intercontinental Exchange Inc,0.28%
-AMAT,Applied Materials Inc,0.28%
-APD,Air Products and Chemicals Inc,0.28%
-BIIB,Biogen Inc,0.27%
-EW,Edwards Lifesciences Corp,0.27%
-ITW,Illinois Tool Works Inc,0.27%
-SCHW,Charles Schwab Corp,0.27%
-MU,Micron Technology Inc,0.27%
-NSC,Norfolk Southern Corp,0.27%
-SLB,Schlumberger NV,0.26%
-ECL,Ecolab Inc,0.26%
-GM,General Motors Co,0.25%
-AIG,American International Group Inc,0.25%
-WBA,Walgreens Boots Alliance Inc,0.25%
-SPG,Simon Property Group Inc,0.25%
-AON,Aon PLC,0.25%
-HUM,Humana Inc,0.24%
-KMB,Kimberly-Clark Corp,0.24%
-LHX,L3Harris Technologies Inc,0.24%
-AEP,American Electric Power Company Inc,0.24%
-COF,Capital One Financial Corp,0.24%
-EQIX,Equinix Inc,0.24%
-EMR,Emerson Electric Co,0.24%
-EXC,Exelon Corp,0.23%
-BAX,Baxter International Inc,0.22%
-BK,Bank of New York Mellon Corp,0.22%
-ILMN,Illumina Inc,0.22%
-SRE,Sempra Energy,0.22%
-SYY,Sysco Corp,0.22%
-VLO,Valero Energy Corp,0.22%
-ROST,Ross Stores Inc,0.22%
-WM,Waste Management Inc,0.22%
-KMI,Kinder Morgan Inc,0.21%
-MET,MetLife Inc,0.21%
-ATVI,Activision Blizzard Inc,0.21%
-AFL,Aflac Inc,0.21%
-FDX,FedEx Corp,0.20%
-MCO,Moody's Corp,0.20%
-LRCX,Lam Research Corp,0.20%
-ETN,Eaton Corporation PLC,0.20%
-PRU,Prudential Financial Inc,0.19%
-ALL,Allstate Corp,0.19%
-ADSK,Autodesk Inc,0.19%
-F,Ford Motor Co,0.18%
-ROP,Roper Technologies Inc,0.18%
-TRV,Travelers Companies Inc,0.18%
-OXY,Occidental Petroleum Corp,0.18%
-WELL,Welltower Inc,0.18%
-JCI,Johnson Controls International PLC,0.18%
-TEL,TE Connectivity Ltd,0.17%
-XEL,Xcel Energy Inc,0.17%
-GIS,General Mills Inc,0.17%
-STZ,Constellation Brands Inc,0.17%
-DAL,Delta Air Lines Inc,0.17%
-EQR,Equity Residential,0.16%
-AVB,AvalonBay Communities Inc,0.16%
-NEM,Newmont Goldcorp Corp,0.16%
-PEG,Public Service Enterprise Group Inc,0.16%
-IR,Ingersoll-Rand PLC,0.16%
-YUM,Yum! Brands Inc,0.15%
-TROW,T. Rowe Price Group Inc,0.15%
-LUV,Southwest Airlines Co,0.15%
-INFO,IHS Markit Ltd,0.15%
-VFC,VF Corp,0.15%
-HLT,Hilton Worldwide Holdings Inc,0.15%
-EA,Electronic Arts Inc,0.15%
-HPQ,HP Inc,0.15%
-ED,Consolidated Edison Inc,0.15%
-CMI,Cummins Inc,0.15%
-DFS,Discover Financial Services,0.14%
-EBAY,eBay Inc,0.14%
-ES,Eversource Energy,0.14%
-DLTR,Dollar Tree Inc,0.14%
-KLAC,KLA Corp,0.14%
-MSI,Motorola Solutions Inc,0.14%
-MCK,McKesson Corp,0.14%
-TSN,Tyson Foods Inc,0.14%
-STT,State Street Corp,0.14%
-PCAR,Paccar Inc,0.14%
-WEC,WEC Energy Group Inc,0.14%
-XLNX,Xilinx Inc,0.13%
-LYB,LyondellBasell Industries NV,0.13%
-SWK,Stanley Black & Decker Inc,0.13%
-EIX,Edison International,0.13%
-DLR,Digital Realty Trust Inc,0.13%
-ALXN,Alexion Pharmaceuticals Inc,0.13%
-A,Agilent Technologies Inc,0.13%
-ADM,Archer Daniels Midland Co,0.12%
-GLW,Corning Inc,0.12%
-ESS,Essex Property Trust Inc,0.12%
-ETR,Entergy Corp,0.12%
-HPE,Hewlett Packard Enterprise Co,0.12%
-TWTR,Twitter Inc,0.12%
-ROK,Rockwell Automation Inc,0.12%
-SYF,Synchrony Financial,0.12%
-MCHP,Microchip Technology Inc,0.12%
-NTRS,Northern Trust Corp,0.12%
-IDXX,IDEXX Laboratories Inc,0.12%
-HSY,Hershey Co,0.12%
-HIG,Hartford Financial Services Group Inc,0.11%
-KR,Kroger Co,0.11%
-MKC,McCormick & Company Inc,0.11%
-MTD,Mettler-Toledo International Inc,0.11%
-KHC,Kraft Heinz Co,0.11%
-MSCI,MSCI Inc,0.11%
-WY,Weyerhaeuser Co,0.11%
-FAST,Fastenal Co,0.11%
-CTAS,Cintas Corp,0.11%
-AME,Ametek Inc,0.11%
-BXP,Boston Properties Inc,0.11%
-CERN,Cerner Corp,0.11%
-AMP,Ameriprise Financial Inc,0.11%
-BLL,Ball Corp,0.11%
-VTR,Ventas Inc,0.11%
-CBRE,CBRE Group Inc,0.10%
-ANSS,ANSYS Inc,0.10%
-CCL,Carnival Corp,0.10%
-CLX,Clorox Co,0.10%
-RSG,Republic Services Inc,0.10%
-KEY,KeyCorp,0.10%
-KEYS,Keysight Technologies Inc,0.10%
-HAL,Halliburton Co,0.10%
-PEAK,Healthpeak Properties Inc,0.09%
-K,Kellogg Co,0.09%
-HES,Hess Corp,0.09%
-LH,Laboratory Corporation of America Holdings,0.09%
-OMC,Omnicom Group Inc,0.09%
-VMC,Vulcan Materials Co,0.09%
-EFX,Equifax Inc,0.09%
-FCX,Freeport-McMoRan Inc,0.09%
-CMS,CMS Energy Corp,0.09%
-KMX,Carmax Inc,0.09%
-CAH,Cardinal Health Inc,0.09%
-ARE,Alexandria Real Estate Equities Inc,0.09%
-BBY,Best Buy Co Inc,0.09%
-CTXS,Citrix Systems Inc,0.08%
-INCY,Incyte Corp,0.08%
-CAG,Conagra Brands Inc,0.08%
-DRI,Darden Restaurants Inc,0.08%
-CTL,Centurylink Inc,0.08%
-DOV,Dover Corp,0.08%
-WAB,Westinghouse Air Brake Technologies Corp,0.08%
-NLOK,NortonLifeLock Inc,0.08%
-MAA,Mid-America Apartment Communities Inc,0.08%
-IFF,International Flavors & Fragrances Inc,0.08%
-LNC,Lincoln National Corp,0.07%
-UDR,UDR Inc,0.07%
-TIF,Tiffany & Co,0.07%
-URI,United Rentals Inc,0.07%
-PFG,Principal Financial Group Inc,0.07%
-DGX,Quest Diagnostics Inc,0.07%
-TTWO,Take-Two Interactive Software Inc,0.07%
-GWW,W W Grainger Inc,0.07%
-EXPD,Expeditors International of Washington Inc,0.07%
-CBOE,Cboe Global Markets Inc,0.07%
-CBS,CBS Corp,0.07%
-BKR,Baker Hughes Co,0.07%
-AKAM,Akamai Technologies Inc,0.07%
-XYL,Xylem Inc,0.07%
-STX,Seagate Technology PLC,0.07%
-GRMN,Garmin Ltd,0.07%
-LNT,Alliant Energy Corp,0.06%
-AES,AES Corp,0.06%
-ARNC,Arconic Inc,0.06%
-BF/B,Brown-Forman Corp,0.06%
-FMC,FMC Corp,0.06%
-HST,Host Hotels & Resorts Inc,0.06%
-HRL,Hormel Foods Corp,0.06%
-HAS,Hasbro Inc,0.06%
-CMA,Comerica Inc,0.06%
-DRE,Duke Realty Corp,0.06%
-SJM,J M Smucker Co,0.06%
-REG,Regency Centers Corp,0.06%
-RJF,Raymond James Financial Inc,0.06%
-TSCO,Tractor Supply Co,0.06%
-WHR,Whirlpool Corp,0.06%
-VNO,Vornado Realty Trust,0.06%
-NDAQ,Nasdaq Inc,0.06%
-NRG,NRG Energy Inc,0.05%
-IRM,Iron Mountain Inc,0.05%
-NI,NiSource Inc,0.05%
-TAP,Molson Coors Brewing Co,0.05%
-JNPR,Juniper Networks Inc,0.05%
-KSS,Kohls Corp,0.05%
-WRK,Westrock Co,0.05%
-NBL,Noble Energy Inc,0.05%
-PNW,Pinnacle West Capital Corp,0.05%
-HSIC,Henry Schein Inc,0.05%
-SNA,Snap-On Inc,0.05%
-DISCK,Discovery Inc,0.05%
-FRT,Federal Realty Investment Trust,0.05%
-DXC,DXC Technology Co,0.05%
-GL,Globe Life Inc,0.05%
-EMN,Eastman Chemical Co,0.05%
-ETFC,E*TRADE Financial Corp,0.05%
-CF,CF Industries Holdings Inc,0.05%
-CPB,Campbell Soup Co,0.05%
-BWA,BorgWarner Inc,0.05%
-AIV,Apartment Investment and Management Co,0.04%
-ALK,Alaska Air Group Inc,0.04%
-BEN,Franklin Resources Inc,0.04%
-DVA,DaVita Inc,0.04%
-VIAB,Viacom Inc,0.04%
-SLG,SL Green Realty Corp,0.04%
-TPR,Tapestry Inc,0.04%
-HFC,HollyFrontier Corp,0.04%
-LEG,Leggett & Platt Inc,0.04%
-IPG,Interpublic Group of Companies Inc,0.04%
-KIM,Kimco Realty Corp,0.04%
-PVH,PVH Corp,0.04%
-MOS,Mosaic Co,0.04%
-PNR,Pentair PLC,0.04%
-FTI,TechnipFMC PLC,0.04%
-XRX,Xerox Holdings Corp,0.04%
-NLSN,Nielsen Holdings PLC,0.04%
-IVZ,Invesco Ltd,0.04%
-NWSA,News Corp,0.03%
-HBI,HanesBrands Inc,0.03%
-RHI,Robert Half International Inc,0.03%
-UNM,Unum Group,0.03%
-PWR,Quanta Services Inc,0.03%
-RL,Ralph Lauren Corp,0.03%
-FLS,Flowserve Corp,0.03%
-HRB,H & R Block Inc,0.03%
-ADS,Alliance Data Systems Corp,0.02%
-GPS,Gap Inc,0.02%
-DISCA,Discovery Inc,0.02%
-JWN,Nordstrom Inc,0.02%
-TRIP,TripAdvisor Inc,0.02%
-LB,L Brands Inc,0.02%
-NWS,News Corp,0.01%
-MAC,Macerich Co,0.01%
-,,
+label,value
+AAPL,5.94
+MSFT,5.93
+AMZN,3.8
+JPM,2.17
+GOOG,2.04
+GOOGL,2.03
+V,1.64
+PG,1.6
+XOM,1.54
+T,1.51
+BAC,1.45
+DIS,1.41
+INTC,1.35
+HD,1.35
+MA,1.31
+VZ,1.3
+UNH,1.27
+CVX,1.22
+MRK,1.15
+CSCO,1.09
+CMCSA,1.08
+KO,1.07
+PFE,1.07
+PEP,0.99
+WMT,0.9
+WMT,0.9
+C,0.88
+ABT,0.79
+MCD,0.79
+MDT,0.77
+CRM,0.75
+ADBE,0.75
+AMGN,0.69
+ABBV,0.67
+NVDA,0.67
+UNP,0.66
+ACN,0.65
+UTX,0.63
+NKE,0.6
+NEE,0.6
+LIN,0.59
+TXN,0.58
+QCOM,0.58
+SBUX,0.53
+GE,0.52
+BMY,0.51
+CVS,0.5
+DHR,0.46
+LOW,0.46
+UPS,0.45
+USB,0.44
+CAT,0.43
+CHTR,0.43
+AXP,0.43
+GILD,0.42
+CELG,0.41
+MDLZ,0.4
+ADP,0.39
+CME,0.38
+CI,0.38
+ANTM,0.38
+GS,0.38
+TJX,0.37
+PNC,0.36
+CB,0.36
+INTU,0.35
+BDX,0.35
+D,0.35
+DUK,0.34
+COP,0.34
+SPGI,0.33
+MS,0.32
+AGN,0.31
+PLD,0.3
+CL,0.3
+CSX,0.3
+BSX,0.3
+BLK,0.29
+DE,0.29
+TGT,0.29
+PSX,0.28
+VRTX,0.28
+MMC,0.28
+CCI,0.28
+ICE,0.28
+AMAT,0.28
+APD,0.28
+BIIB,0.27
+EW,0.27
+ITW,0.27
+SCHW,0.27
+MU,0.27
+NSC,0.27
+SLB,0.26
+ECL,0.26
+GM,0.25
+AIG,0.25
+WBA,0.25
+SPG,0.25
+AON,0.25
+HUM,0.24
+KMB,0.24
+LHX,0.24
+AEP,0.24
+COF,0.24
+EQIX,0.24
+EMR,0.24
+EXC,0.23
+BAX,0.22
+BK,0.22
+ILMN,0.22
+SRE,0.22
+SYY,0.22
+VLO,0.22
+ROST,0.22
+WM,0.22
+KMI,0.21
+MET,0.21
+ATVI,0.21
+AFL,0.21
+FDX,0.2
+MCO,0.2
+LRCX,0.2
+ETN,0.2
+PRU,0.19
+ALL,0.19
+ADSK,0.19
+F,0.18
+ROP,0.18
+TRV,0.18
+OXY,0.18
+WELL,0.18
+JCI,0.18
+TEL,0.17
+XEL,0.17
+GIS,0.17
+STZ,0.17
+DAL,0.17
+EQR,0.16
+AVB,0.16
+NEM,0.16
+PEG,0.16
+IR,0.16
+YUM,0.15
+TROW,0.15
+LUV,0.15
+INFO,0.15
+VFC,0.15
+HLT,0.15
+EA,0.15
+HPQ,0.15
+ED,0.15
+CMI,0.15
+DFS,0.14
+EBAY,0.14
+ES,0.14
+DLTR,0.14
+KLAC,0.14
+MSI,0.14
+MCK,0.14
+TSN,0.14
+STT,0.14
+PCAR,0.14
+WEC,0.14
+XLNX,0.13
+LYB,0.13
+SWK,0.13
+EIX,0.13
+DLR,0.13
+ALXN,0.13
+A,0.13
+ADM,0.12
+GLW,0.12
+ESS,0.12
+ETR,0.12
+HPE,0.12
+TWTR,0.12
+ROK,0.12
+SYF,0.12
+MCHP,0.12
+NTRS,0.12
+IDXX,0.12
+HSY,0.12
+HIG,0.11
+KR,0.11
+MKC,0.11
+MTD,0.11
+KHC,0.11
+MSCI,0.11
+WY,0.11
+FAST,0.11
+CTAS,0.11
+AME,0.11
+BXP,0.11
+CERN,0.11
+AMP,0.11
+BLL,0.11
+VTR,0.11
+CBRE,0.1
+ANSS,0.1
+CCL,0.1
+CLX,0.1
+RSG,0.1
+KEY,0.1
+KEYS,0.1
+HAL,0.1
+PEAK,0.09
+K,0.09
+HES,0.09
+LH,0.09
+OMC,0.09
+VMC,0.09
+EFX,0.09
+FCX,0.09
+CMS,0.09
+KMX,0.09
+CAH,0.09
+ARE,0.09
+BBY,0.09
+CTXS,0.08
+INCY,0.08
+CAG,0.08
+DRI,0.08
+CTL,0.08
+DOV,0.08
+WAB,0.08
+NLOK,0.08
+MAA,0.08
+IFF,0.08
+LNC,0.07
+UDR,0.07
+TIF,0.07
+URI,0.07
+PFG,0.07
+DGX,0.07
+TTWO,0.07
+GWW,0.07
+EXPD,0.07
+CBOE,0.07
+CBS,0.07
+BKR,0.07
+AKAM,0.07
+XYL,0.07
+STX,0.07
+GRMN,0.07
+LNT,0.06
+AES,0.06
+ARNC,0.06
+BF/B,0.06
+FMC,0.06
+HST,0.06
+HRL,0.06
+HAS,0.06
+CMA,0.06
+DRE,0.06
+SJM,0.06
+REG,0.06
+RJF,0.06
+TSCO,0.06
+WHR,0.06
+VNO,0.06
+NDAQ,0.06
+NRG,0.05
+IRM,0.05
+NI,0.05
+TAP,0.05
+JNPR,0.05
+KSS,0.05
+WRK,0.05
+NBL,0.05
+PNW,0.05
+HSIC,0.05
+SNA,0.05
+DISCK,0.05
+FRT,0.05
+DXC,0.05
+GL,0.05
+EMN,0.05
+ETFC,0.05
+CF,0.05
+CPB,0.05
+BWA,0.05
+AIV,0.04
+ALK,0.04
+BEN,0.04
+DVA,0.04
+VIAB,0.04
+SLG,0.04
+TPR,0.04
+HFC,0.04
+LEG,0.04
+IPG,0.04
+KIM,0.04
+PVH,0.04
+MOS,0.04
+PNR,0.04
+FTI,0.04
+XRX,0.04
+NLSN,0.04
+IVZ,0.04
+NWSA,0.03
+HBI,0.03
+RHI,0.03
+UNM,0.03
+PWR,0.03
+RL,0.03
+FLS,0.03
+HRB,0.03
+ADS,0.02
+GPS,0.02
+DISCA,0.02
+JWN,0.02
+TRIP,0.02
+LB,0.02
+NWS,0.01
+MAC,0.01

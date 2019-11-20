@@ -51,14 +51,15 @@ document.addEventListener('DOMContentLoaded', (event) => {
         },
     
         series: [{
+            name: 'Non-Reporters',
+            data: [80, 47, 28, 25, 19, 18, 15, 14],
+            stack: 'whole'
+            
+        }, {
             name: 'Reporters',
             data: [20, 53, 72, 75, 81, 82, 85, 86],
             stack: 'whole'
-        }, {
-            name: 'Not Reporters',
-            data: [80, 47, 28, 25, 19, 18, 15, 14],
-            stack: 'whole'
-        
+
         }]
     });
     });

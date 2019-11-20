@@ -47,8 +47,6 @@
     font: 20px;
   }
 
-  
-
   /* scroll_bar */
   svg {
     font: 10px sans-serif;
@@ -85,4 +83,24 @@
               fill: lightSteelBlue;
               fill-opacity: .5;
           }
+
+/* html */
+#myVideo {
+  /* position: fixed;
+  right: 0;
+  bottom: 0; */
+  margin-top: -500px;
+  min-width: 100%;
+  min-height: 20%;
+}
+
+/* Add some content at the bottom of the video/page */
+.banner {
+  margin-top: -108px;
+  background: rgba(217,215,215);
+  color: #f1f1f1;
+  width: 100%;
+   padding-top: 150px;
+  /*padding: 20px;*/  
+}
   

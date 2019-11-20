@@ -44,10 +44,7 @@
       .row.content {height: auto;} 
     }
   </style>
-  <marquee behavior="scroll" direction="right">Here is some scrolling text... left to right!</marquee>
-
-
-
+ 
 </head>
 <body>
 
@@ -75,11 +72,25 @@
 <div class="container-banner">
     <div class="row">
       <div class="col-md-12 jumbotron text-center">
-        <h1 class="inline" style="color: blue;">Socially Responsible Investment</h1>
-        <br><br>
-        <p><h3 class="inline" style="color: blue;">E</h3>nvironmental <h3 class="inline" style="color: blue;">S</h3>ocial <h3 class="inline" style="color: blue;">G</h3>overnance </h3>ocial <h3 class="inline" style="color: blue;">Investing</h3></p>
+
+        <!-- The video -->
+<video autoplay muted loop id="myVideo">
+    <source src="static/video/background.mp4" type="video/mp4">
+  </video>
+  
+  <!-- Optional: some overlay text to describe the video -->
+  <div class="banner">
+      <h1 class="inline" style="color: blue;">Socially Responsible Investment</h1>
+      <br><br>
+      <p><h3 class="inline" style="color: blue;">E</h3>nvironmental <h3 class="inline" style="color: blue;">S</h3>ocial <h3 class="inline" style="color: blue;">G</h3>overnance<h3 class="inline" style="color: blue;">Investing</h3></p>
+       
+  </div>
+          
+      </div>
       </div>
     </div>
+
+  <marquee behavior="scroll" direction="right">Here is some scrolling text... left to right!</marquee>
 
 <div class="container-fluid"> <!--SIDE BAR: this is where drop downs will go> -->
   <div class="row content">
@@ -98,7 +109,7 @@
       <div class="col-sm-12"> <!--ESG explained and sunburst chart-->      
       <div class="well">
         <h1 class="inline" style="color: blue;">ESG</h1> <h3 class="inline" style="color: blue;">Investment for Better World</h3>
-        <p>ESG investing involves investments on stocks of firms with high rankings on their sustainable practices which make positive environmental, social, and governance impacts.  The score rubrics for these rankings normally are based on the <a href="https://www.unpri.org/sdgs">UN Sustainable Development Goals</a> which acknowledge that significant private sector action is needed to foster the goals.  The <a href="https://www.ussif.org">US SIF</a> provides some examples of corporate activities causing ESG impacts.</p>
+        <p>ESG investing involves investments on stocks of firms with high rankings on their sustainability practices which make positive environmental, social, and corporate governance impacts.  The score rubrics for these rankings normally are based on the <a href="https://www.unpri.org/sdgs">UN Sustainable Development Goals</a> which acknowledge that significant private sector action is needed to foster the goals.  The <a href="https://www.ussif.org">US SIF</a> provides some examples of corporate activities causing ESG impacts.</p>
         
         <div id="sunburst_container"></div>
        
@@ -112,8 +123,9 @@
             <div class="well">
                 <h1 class="inline" style="color: blue;">ESG</h1> <h3 class="inline" style="color: blue;">Rankings & Net Benefits to Firms and Investors</h3>
                 <p class="highcharts-description">
-                    Chart showing grouped and stacked 3D columns. These features are
-                    available both for 2D and 3D column charts.
+                  Scores for ESG rankings often are gathered from companies' sustainability reports. <a href="https://www.ga-institute.com/press-releases/article/flash-report-86-of-sp-500-indexR-companies-publish-sustainability-responsibility-reports-in-20.html">Governance and Accountability Institute</a>'s research show results of large increase in S&P 500 companies sustainability reports from 20% in 2011 to 86% in 2018 reflecting benefits to firms to voluntarily self-report their ESG activities.  Firms increase risk assessments as practices to generate data and content for reports, resulting in efficient operations and higher net benefits.  Investors remains skeptical since standards for ESG rankings remain unestablished.  Some firms now hire independent ESG quality assurance companies to improve accuracy of their reports.  An <a href="https://www.hbs.edu/faculty/Publication%20Files/SSRN-id1964011_6791edac-7daa-4603-a220-4a0c6c7a3f7a.pdf">academic publication</a> from Harvard Business School also <i>provide(s) evidence that High
+                  Sustainability companies significantly outperform their counterparts over the long-term, both in terms of
+                  stock market as well as accounting performance.</i>    
                 </p>
               
         <figure class="highcharts-figure">
@@ -129,8 +141,15 @@
           <div class="col-sm-12"> <!--ESG index and scroll bar-->      
             <div class="well">
               <h1 class="inline" style="color: blue;">ESG</h1> <h3 class="inline" style="color: blue;">Firm Profiles and S&P ESG 500 Index Weight</h3>
-              <p>ESG Firms </p>
+              <br><br>
+              <p>Top ESG firms using the <a href="https://www.etf.com/SNPE#overview">SNPE ETF criteria</a></p>
               
+              <p>
+                SNPE is an ESG focused fund that draws its universe from the S&P 500. The fund excludes companies involved in tobacco, controversial weapons, ranks low with the United Nations Global Compact (“UNGC”) score ranking, and score bottom 25% of GICS ESG ratings within its industry. After exclusions are applied, companies are selected by ESG score, while at the same time mirroring the industry weightings of the S&P 500.
+              </p>
+              
+              <p>Disclaimer: This webpage neither relates nore endorse SNPE.  They are used for education purposes only as their criteria are closely related to the UN Sustainable Development Goals</p> 
+                            
               <div id="scroll_bar_container"></div>
             
             </div>
@@ -178,11 +197,6 @@
   </div>
 </div>
 
-<!-- <script src="https://code.highcharts.com/highcharts.js"></script>
-  <script src="https://code.highcharts.com/highcharts-3d.js"></script>
-  <script src="https://code.highcharts.com/modules/exporting.js"></script>
-  <script src="https://code.highcharts.com/modules/export-data.js"></script>
-  <script src="https://code.highcharts.com/modules/accessibility.js"></script> -->
 </div>
 </div>
 

@@ -3,49 +3,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 // Retrieve data from the CSV file and execute everything below
 
 d3.csv("static/data/esgco.csv", function(data) {
-    for (var i = 0; i < data.length; i++) {
-        console.log(data[i].ticker);
-        console.log(data[i].co);
-        console.log(data[i].weight);
-    }
-});
-
-// d3.csv("static/data/esgco.csv", function(d) {
-//     return {
-//       ticker : d.ticker,
-//       co : d.co,
-//       weight : +d.weight      
-//     };
-//   }).then(function(d) {
-//     console.log(data[0]);
-//   });
-        
-var DATA_COUNT = 50;         
-var MAX_LABEL_LENGTH = 30; 
-      
-var data = [];
- 
-for (var i = 0; i < DATA_COUNT; i++) {
-    var datum = {};
-    datum.label = stringGen(MAX_LABEL_LENGTH)
-    datum.value = Math.floor(Math.random() * 600);
-    data.push(datum);
-}
-    
-function stringGen(maxLength) {
-    var text = "";
-    var charset = "abcdefghijklmnopqrstuvwxyz0123456789";
-
-    for( var i=0; i < getRandomArbitrary(1, maxLength) ; i++ ) {
-        text += charset.charAt(Math.floor(Math.random() * charset.length));
-    }                                                
-
-    return text;
-}
-  
-function getRandomArbitrary(min, max) {
-  return Math.round(Math.random() * (max - min) + min);
-}  
+    console.log(data); 
                     
 var margin =  {top: 20, right: 20, bottom: 20, left: 100};
 var marginOverview = {top: 30, right: 20, bottom: 20, left: 100};
@@ -181,4 +139,5 @@ function display () {
 
     rects.exit().remove();
 };
+});
 });

@@ -11,11 +11,11 @@ document.addEventListener('DOMContentLoaded', (event) => {
     }, {
         id: '1.2',
         parent: '0.0',
-        name: 'CORPORATE GOVERNANCE'
+        name: 'SOCIAL'
     }, {
         id: '1.3',
         parent: '0.0',
-        name: 'SOCIAL'
+        name: 'CORPORATE GOVERNANCE'
     }, 
         
     /* ENVIRONMENTAL */
@@ -57,84 +57,87 @@ document.addEventListener('DOMContentLoaded', (event) => {
         value: 1
     }, 
 
-    /* CORPORATE GOVERNANCE */
-    
+    /* SOCIAL */
+
     {
         id: '2.7',
         parent: '1.2',
-        name: 'Corporate Political Contributions'
+        name: 'Human Rights'
         ,
         value: 1
     }, {
         id: '2.8',
         parent: '1.2',
-        name: 'Executive Compensation'
+        name: 'Avoidance of Tobacco or Other Harmful Products'
         ,
         value: 1
     }, {
         id: '2.9',
         parent: '1.2',
-        name: 'Board Diversity'
+        name: 'Community Development'
         ,
         value: 1
     }, {
         id: '2.10',
         parent: '1.2',
-        name: 'Anti-Corruption Policies'
+        name: 'Diversity & Anti-Bias Issues'
         ,
         value: 1
     }, {
         id: '2.11',
         parent: '1.2',
-        name: 'Board Independence'
+        name: 'Workplace Benefits'
         ,
         value: 1
-    }, 
-    
-    /* SOCIAL */
-
-    {
+    }, {
         id: '2.12',
-        parent: '1.3',
-        name: 'Human Rights'
+        parent: '1.2',
+        name: 'Labor Relations'
         ,
         value: 1
     }, {
         id: '2.13',
-        parent: '1.3',
-        name: 'Avoidance of Tobacco or Other Harmful Products'
+        parent: '1.2',
+        name: 'Workplace Safety'
         ,
         value: 1
-    }, {
+    },
+
+
+    /* CORPORATE GOVERNANCE */
+    
+    {
         id: '2.14',
         parent: '1.3',
-        name: 'Community Development'
+        name: 'Corporate Political Contributions'
         ,
         value: 1
     }, {
         id: '2.15',
         parent: '1.3',
-        name: 'Diversity & Anti-Bias Issues'
+        name: 'Executive Compensation'
         ,
         value: 1
     }, {
         id: '2.16',
         parent: '1.3',
-        name: 'Workplace Benefits'
+        name: 'Board Diversity'
         ,
         value: 1
     }, {
         id: '2.17',
         parent: '1.3',
-        name: 'Labor Relations'
+        name: 'Anti-Corruption Policies'
         ,
         value: 1
     }, {
         id: '2.18',
         parent: '1.3',
-        name: 'Workplace Safety'
+        name: 'Board Independence'
         ,
         value: 1
+        
+    
     }]; 
     
      
@@ -145,11 +148,11 @@ document.addEventListener('DOMContentLoaded', (event) => {
     Highcharts.chart('sunburst_container', {
     
         chart: {
-            height: '60%'
+            height: '85%'
         },
     
         title: {
-            text: 'Examples of ESG Criteria Used by Sustainable Investore'
+            text: 'Examples of ESG Criteria Used by Sustainable Investors'
         },
         subtitle: {
             text: 'Source: <a href="https://www.ussif.org">US SIF</a>'
@@ -183,26 +186,11 @@ document.addEventListener('DOMContentLoaded', (event) => {
             }, {
                 level: 2,
                 colorByPoint: true
-            // // },
-            // // {
-            // //     level: 3,
-            // //     colorVariation: {
-            // //         key: 'brightness',
-            // //         to: -0.5
-            // //     }
-            // // }, {
-            // //     level: 4,
-            // //     colorVariation: {
-            // //         key: 'brightness',
-            // //         to: 0.5
-            //     }
+            
             }]
     
         }],
-        // tooltip: {
-        //     headerFormat: "",
-        //     pointFormat: 'The population of <b>{point.name}</b> is <b>{point.value}</b>'
-        // }
+        
     });
     });
     
