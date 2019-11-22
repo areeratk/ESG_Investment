@@ -8,7 +8,8 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
-  <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.2.3/d3.min.js"></script> -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.2.3/d3.min.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
   <script src="https://d3js.org/d3.v3.min.js"></script>
 
   <script src="https://code.highcharts.com/highcharts.js"></script>
@@ -90,11 +91,11 @@
       </div>
     </div>
 
-  <marquee behavior="scroll" direction="right">Here is some scrolling text... left to right!</marquee>
+  <!-- <marquee behavior="scroll" direction="right">Here is some scrolling text... left to right!</marquee> -->
 
 <div class="container-fluid"> <!--SIDE BAR: this is where drop downs will go> -->
   <div class="row content">
-    <div class="col-sm-3 sidenav hidden-xs">
+    <!-- <div class="col-sm-3 sidenav hidden-xs">
       <h2>Menu</h2>
       <ul class="nav nav-pills nav-stacked">
         <li class="active"><a href="#section1">Companies</a></li>
@@ -102,9 +103,9 @@
         <li><a href="#section3">STHG2</a></li>
         <li><a href="#section3">STHG2</a></li>
       </ul><br>
-    </div>
+    </div> -->
       
-    <div class="col-sm-9"> <!--content-->
+    <div class="col-sm-12"> <!--content-->
       <div class="row">
       <div class="col-sm-12"> <!--ESG explained and sunburst chart-->      
       <div class="well">
@@ -166,26 +167,26 @@
           <hr>
 
       <div class="row">
-        <div class="col-sm-6"> <!--TEXT Info of company-->
+        <div class="col-sm-12"> <!--TEXT Info of company-->
           <div class="well">
             <p>SELECTED COMPANY PROFILE</p> 
-           
+          <br>
+          
+          <select id="selDataset" onchange="buildPlot(this.value)">
+              <option selected="true" disabled>Choose Company</option>
+          </select>
+          <button id="button" type="button" class="btn btn-default">Want More Information?</button>
+          <div id="first-dopdown-plot"></div>
+          <br>
+           <!-- <h1>Data Summary</h1> -->
+           <ul class="summary"></ul>
+          <script src="static/js/data.js"></script>
+          <script src="static/js/app.js"></script>
+          
           </div>
         </div>
         
-        <div class="col-sm-6"> <!--CALCULATOR AND GRAPH-->
-          <div class="well">
-            <p>INVESTMENT CALCULATOR</p> 
-            
-          </div>
-        </div>
-      </div>
-      <div class="row"> 
-        <div class="col-sm-8"> <!--MAP HQ LOCATIONS -->
-          <div class="well">
-            <p>MAP OF HQ & SUBS</p> 
-          </div>
-        </div>
+      
  
     </div>
   </div>
