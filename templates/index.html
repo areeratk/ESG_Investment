@@ -22,13 +22,18 @@
   <script src="https://code.highcharts.com/modules/export-data.js"></script>
   <script src="https://code.highcharts.com/modules/accessibility.js"></script>
 
-  <script type="text/javascript" src="static/js/esg_3d_chart.js"></script>
+  <script src="{{ url_for('static', filename='js/esg_3d_chart.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/esg_sunburst.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/esg_scroll.js') }}"></script>
+  <link rel= "stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}"></script>
+
+  <!-- <script type="text/javascript" src="static/js/esg_3d_chart.js"></script>
 
   <script type="text/javascript" src="static/js/esg_sunburst.js"></script>
 
   <script type="text/javascript" src="static/js/esg_scroll_bar.js"></script>
   
-  <link rel="stylesheet" type="text/css" href="static/css/style.css">
+  <link rel="stylesheet" type="text/css" href="static/css/style.css"> -->
 
   <style>
     /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
@@ -180,8 +185,11 @@
           <br>
            <!-- <h1>Data Summary</h1> -->
            <ul class="summary"></ul>
-          <script src="static/js/data.js"></script>
-          <script src="static/js/app.js"></script>
+
+          <script src="{{ url_for('static', filename='data/data.js') }}"></script>
+          <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+          <!-- <script src="static/js/data.js"></script>
+          <script src="static/js/app.js"></script> -->
           
           </div>
         </div>
