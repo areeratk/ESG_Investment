@@ -13,24 +13,8 @@ $.getJSON(jsonurl, function (data) {
     dropdown.append($('<option></option>').attr('value', entry.symbol).text(entry.name));
   })
 });
-//<option value="AAPL">Apple Inc</option>
 
 var tbody = $("<tbody />"),tr;
-
-// function buildTable(stock) {
-//   $.each(jsonurl,function(_,obj) {
-//       if (stock==="AAPL")
-//       console.log(obj.sector);
-//       tr = $("<tr />");
-//       $.each(obj,function(_,text) {
-//         tr.append("<td>"+text+"</td>")      
-//         tr.append("<td>"+obj.sector+"</td>")
-//         tr.append("<td>"+obj.stock_prices+"</td>")  
-//       });
-//       tr.appendTo(tbody);
-//   })
-// }
-// tbody.appendTo("#table1"); // only DOM insertion
 
 
 function unpack(rows, index) {
@@ -46,19 +30,14 @@ function buildPlot(stock) {
 
   var apiKey = "Rn7DiGxY-kcDgp1GWyrD";
 
-  //var today = new Date();
-  //var dd = String(today.getDate()).padStart(2, '0');
-  //var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
-  //var yyyy = today.getFullYear();
-  var today = new Date();
-var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
 
-    //today = yyyy + '-' + mm + '-' + dd;
+  var today = new Date();
+  var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
+
 
   var url = `https://www.quandl.com/api/v3/datasets/WIKI/${stock}.json?start_date=2014-01-01&end_date=${date}&api_key=${apiKey}`;
 
   d3.json(url, function(data) {
-    // Grab values from the response json object to build the plots
     var name = data.dataset.name;
     var stock = data.dataset.dataset_code;
     var startDate = data.dataset.start_date;
@@ -109,18 +88,18 @@ var button = d3.select("#button");
 
 button.on("click", function() {
 
-  // Select the input element and get the raw HTML node
+
   var inputElement = d3.select("#selDataset");
 
-  // Get the value property of the input element
+
   var inputValue = inputElement.property("value");
 
   console.log(inputValue);
-  //console.log(people);
+
 
   var filteredData = people.filter(person => person.symbol === inputValue);
 
-  //console.log(filteredData);
+
   if (inputValue=filteredData) {
     console.log(filteredData)
 
@@ -153,32 +132,6 @@ button.on("click", function() {
     list.append("li").text(`Market Cap: ${market_cap}`)
     list.append("li").text(`PTC Flow: ${ptc_flow}`);
     list.append("li").text(`Employees: ${employees}`)
-    // $.each(filteredData, function (key, value) { 
-    //   $("#" + key).text(value);
-    //});
   }
-  // // BONUS: Calculate summary statistics for the age field of the filtered data
 
-  // // First, create an array with just the age values
-  // var ages = filteredData.map(person => person.age);
-
-  // // Next, use math.js to calculate the mean, median, mode, var, and std of the ages
-  // var mean = math.mean(ages);
-  // var median = math.median(ages);
-  // var mode = math.mode(ages);
-  // var variance = math.var(ages);
-  // var standardDeviation = math.std(ages);
-
-  // // Then, select the unordered list element by class name
-  // var list = d3.select(".summary");
-
-  // // remove any children from the list to
-  // list.html("");
-
-  // // append stats to the list
-  // list.append("li").text(`Mean: ${mean}`);
-  // list.append("li").text(`Median: ${median}`);
-  // list.append("li").text(`Mode: ${mode}`);
-  // list.append("li").text(`Variance: ${variance}`);
-  // list.append("li").text(`Standard Deviation: ${standardDeviation}`);
 });
