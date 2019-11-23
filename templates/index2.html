@@ -8,8 +8,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.2.3/d3.min.js"></script>
-  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.2.3/d3.min.js"></script> -->
   <script src="https://d3js.org/d3.v3.min.js"></script>
 
   <script src="https://code.highcharts.com/highcharts.js"></script>
@@ -22,18 +21,13 @@
   <script src="https://code.highcharts.com/modules/export-data.js"></script>
   <script src="https://code.highcharts.com/modules/accessibility.js"></script>
 
-  <script src="{{ url_for('static', filename='js/esg_3d_chart.js') }}"></script>
-  <script src="{{ url_for('static', filename='js/esg_sunburst.js') }}"></script>
-  <script src="{{ url_for('static', filename='js/esg_scroll_bar.js') }}"></script>
-  <link rel= "stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}"></script>
-
-  <!-- <script type="text/javascript" src="static/js/esg_3d_chart.js"></script>
+  <script type="text/javascript" src="static/js/esg_3d_chart.js"></script>
 
   <script type="text/javascript" src="static/js/esg_sunburst.js"></script>
 
   <script type="text/javascript" src="static/js/esg_scroll_bar.js"></script>
   
-  <link rel="stylesheet" type="text/css" href="static/css/style.css"> -->
+  <link rel="stylesheet" type="text/css" href="static/css/style.css">
 
   <style>
     /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
@@ -96,11 +90,11 @@
       </div>
     </div>
 
-  <!-- <marquee behavior="scroll" direction="right">Here is some scrolling text... left to right!</marquee> -->
+  <marquee behavior="scroll" direction="right">Here is some scrolling text... left to right!</marquee>
 
 <div class="container-fluid"> <!--SIDE BAR: this is where drop downs will go> -->
   <div class="row content">
-    <!-- <div class="col-sm-3 sidenav hidden-xs">
+    <div class="col-sm-3 sidenav hidden-xs">
       <h2>Menu</h2>
       <ul class="nav nav-pills nav-stacked">
         <li class="active"><a href="#section1">Companies</a></li>
@@ -108,14 +102,13 @@
         <li><a href="#section3">STHG2</a></li>
         <li><a href="#section3">STHG2</a></li>
       </ul><br>
-    </div> -->
+    </div>
       
-    <div class="col-sm-12"> <!--content-->
+    <div class="col-sm-9"> <!--content-->
       <div class="row">
       <div class="col-sm-12"> <!--ESG explained and sunburst chart-->      
       <div class="well">
         <h1 class="inline" style="color: blue;">ESG</h1> <h3 class="inline" style="color: blue;">Investment for Better World</h3>
-        <br><br>
         <p>ESG investing involves investments on stocks of firms with high rankings on their sustainability practices which make positive environmental, social, and corporate governance impacts.  The score rubrics for these rankings normally are based on the <a href="https://www.unpri.org/sdgs">UN Sustainable Development Goals</a> which acknowledge that significant private sector action is needed to foster the goals.  The <a href="https://www.ussif.org">US SIF</a> provides some examples of corporate activities causing ESG impacts.</p>
         
         <div id="sunburst_container"></div>
@@ -129,13 +122,8 @@
           <div class="col-sm-12"> <!--ESG Rankings and 3d-chart-->
             <div class="well">
                 <h1 class="inline" style="color: blue;">ESG</h1> <h3 class="inline" style="color: blue;">Rankings & Net Benefits to Firms and Investors</h3>
-                <br><br>
-                <p>
-                  Scores for ESG rankings often are gathered from companies' sustainability reports. <a href="https://www.ga-institute.com/press-releases/article/flash-report-86-of-sp-500-indexR-companies-publish-sustainability-responsibility-reports-in-20.html">Governance and Accountability Institute</a>'s research show results of large increase in S&P 500 companies sustainability reports from 20% in 2011 to 86% in 2018 reflecting benefits to firms to voluntarily self-report their ESG activities.
-                </p>  
-                 
-                <p>
-                  Firms increase risk assessments as practices to generate data and content for reports, resulting in efficient operations and higher net benefits.  Investors remains skeptical since standards for ESG rankings remain unestablished.  Some firms now hire independent ESG quality assurance companies to improve accuracy of their reports.  An <a href="https://www.hbs.edu/faculty/Publication%20Files/SSRN-id1964011_6791edac-7daa-4603-a220-4a0c6c7a3f7a.pdf">academic publication</a> from Harvard Business School also <i>provide(s) evidence that High
+                <p class="highcharts-description">
+                  Scores for ESG rankings often are gathered from companies' sustainability reports. <a href="https://www.ga-institute.com/press-releases/article/flash-report-86-of-sp-500-indexR-companies-publish-sustainability-responsibility-reports-in-20.html">Governance and Accountability Institute</a>'s research show results of large increase in S&P 500 companies sustainability reports from 20% in 2011 to 86% in 2018 reflecting benefits to firms to voluntarily self-report their ESG activities.  Firms increase risk assessments as practices to generate data and content for reports, resulting in efficient operations and higher net benefits.  Investors remains skeptical since standards for ESG rankings remain unestablished.  Some firms now hire independent ESG quality assurance companies to improve accuracy of their reports.  An <a href="https://www.hbs.edu/faculty/Publication%20Files/SSRN-id1964011_6791edac-7daa-4603-a220-4a0c6c7a3f7a.pdf">academic publication</a> from Harvard Business School also <i>provide(s) evidence that High
                   Sustainability companies significantly outperform their counterparts over the long-term, both in terms of
                   stock market as well as accounting performance.</i>    
                 </p>
@@ -160,9 +148,7 @@
                 SNPE is an ESG focused fund that draws its universe from the S&P 500. The fund excludes companies involved in tobacco, controversial weapons, ranks low with the United Nations Global Compact (“UNGC”) score ranking, and score bottom 25% of GICS ESG ratings within its industry. After exclusions are applied, companies are selected by ESG score, while at the same time mirroring the industry weightings of the S&P 500.
               </p>
               
-              <p>Disclaimer: This webpage neither relates nore endorses SNPE.  They are used for educational purposes only as their criteria are closely related to the UN Sustainable Development Goals.  
-                <br>
-                Note: <a href="https://www.sciencedirect.com/topics/earth-and-planetary-sciences/sustainable-development">Sustainable development</a> is defined as “development that meets the needs of the present without compromising the ability of future generations to meet their own needs.”</p> 
+              <p>Disclaimer: This webpage neither relates nore endorse SNPE.  They are used for education purposes only as their criteria are closely related to the UN Sustainable Development Goals</p> 
                             
               <div id="scroll_bar_container"></div>
             
@@ -172,30 +158,41 @@
           <hr>
 
       <div class="row">
-        <div class="col-sm-12"> <!--TEXT Info of company-->
+        <div class="col-sm-6"> <!--TEXT Info of company-->
           <div class="well">
             <p>SELECTED COMPANY PROFILE</p> 
-          <br>
-          
-          <select id="selDataset" onchange="buildPlot(this.value)">
-              <option selected="true" disabled>Choose Company</option>
-          </select>
-          <button id="button" type="button" class="btn btn-default">Want More Information?</button>
-          <div id="first-dopdown-plot"></div>
-          <br>
-           <!-- <h1>Data Summary</h1> -->
-           <ul class="summary"></ul>
-
-          <script src="{{ url_for('static', filename='js/data.js') }}"></script>
-          <script src="{{ url_for('static', filename='js/app.js') }}"></script>
-          <!-- <script src="static/js/data.js"></script>
-          <script src="static/js/app.js"></script> -->
-          
+           
           </div>
         </div>
         
-      
- 
+        <div class="col-sm-6"> <!--CALCULATOR AND GRAPH-->
+          <div class="well">
+            <p>INVESTMENT CALCULATOR</p> 
+            
+          </div>
+        </div>
+      </div>
+      <div class="row"> 
+        <div class="col-sm-8"> <!--MAP HQ LOCATIONS -->
+          <div class="well">
+            <p>MAP OF HQ & SUBS</p> 
+          </div>
+        </div>
+        <div class="col-sm-8"> <!-- LEGEND FOR MAP-->
+          <div class="well">
+            <p>MAP LEGEND</p> 
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-8"> <!--ESG/ SECTOR DATA-->
+          <div class="well">
+            <p>SELECTOR</p> 
+          </div>
+        </div>
+        <div class="col-sm-4"> <!--SOME VISUAL-->
+          <div class="well">
+            <p>visual</p> 
     </div>
   </div>
 </div>

@@ -1,17 +1,3 @@
-/**
- * Helper function to select stock data
- * Returns an array of values
- * @param {array} rows
- * @param {integer} index
- * index 0 - Date
- * index 1 - Open
- * index 2 - High
- * index 3 - Low
- * index 4 - Close
- * index 5 - Volume
- */
-
-
 let dropdown = $('#selDataset');
 
 dropdown.empty();
@@ -71,7 +57,7 @@ var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
 
   var url = `https://www.quandl.com/api/v3/datasets/WIKI/${stock}.json?start_date=2014-01-01&end_date=${date}&api_key=${apiKey}`;
 
-  d3.json(url).then(function(data) {
+  d3.json(url, function(data) {
     // Grab values from the response json object to build the plots
     var name = data.dataset.name;
     var stock = data.dataset.dataset_code;
